@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+
+body {background-image: url("../IMG/fondo4.jpg"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; cursor: url("../IMG/CURSOR.png"), auto;}
+
+.wrapper {background-color: rgba(255,255,255,0.39); width: 1000px; height: auto; margin-left: auto; margin-right: auto; text-align: center; padding: 30px; box-sizing: border-box;}
+
+.footer {background-color: black; width: 1000px; height: 50px; margin-left: auto; margin-right: auto; color : white; line-height: 50px; text-align: center;}
+
+.menu {background-color: black; width: 1000px; height: 200px; color: white; text-align: center; margin-left: auto; margin-right: auto; }
+
+.menu ul {list-style-type: none;}
+
+.menu li {width: 166px; float: left; }
+
+.cuadrito {background-color: midnightblue; width: 700px; padding: 60px; margin: 50px auto; cursor: url("../IMG/CURSOR.png");}
+
+.cuadrito p {text-align: justify; color: aliceblue}
+
+h2 {color: greenyellow; font-family: "jackbb";}
+
+h1 {color: midnightblue;}
+
+p {font-family: "Bitter";}
+
+@font-face {src: url("../SRC/NightmareBeforeChristmas-2v8e.ttf"); font-family: jackbb;}
+
+/*font face permite colocar fuentes de fantasia descargadas - font famili asigna un nombre a la tipografía para usarlo en la página*/ 
+
+a {text-decoration: none; color: white; }
+
+a:hover {color: greenyellow; font-size: 20px;}
+
+/*hover permite que algo funcione/cambie cuando el cursor etá encima*/
+
+#casita {position: fixed; right: 50px; top: 50px;}
+
+.uno {position: absolute; right: 1075px; bottom: 40px;}
+
+.dos {position: absolute; right: 35px; bottom: -460px;}
+
+.tres {position: absolute; right: 1090px; bottom: -960px;}
+
+.cuatro {position: absolute; right: 30px; bottom: -1420px;}
+
+.cinco {position: absolute; right: 1080px; bottom: -1785px;}
+
+.seis {position: absolute; right: 35px; bottom: -2300px;}
+
+/*POSICIONES: 
+relativa: sigue el flujo de la página, se puede mover a partir de su psición de origen (si se pone bottom __ px se mueve hacia arriba /se mueve al lado contrario/)
+fija: posiciona los elementos a partir del buscador, queda fuera del wrapper (sale del flujo de la página) y queda fijo.absoluta: posiciona los elementos a partir del buscador, queda fuera del wrapper (sale del flujo de la página) y no se queda fijo (se mueve cuando se hace scroll*/
+
+
+/*TRANSFORMACIONES*/
+
+.uno:hover {transform: translate(100px, 50px);transition: ease-out 4s;}
+
+.dos:hover {transform: rotate(-360deg);transition: ease-in 4s;}
+
+.tres:hover {transform: rotateY(360deg); transition: ease-in-out 4s;}
+
+.cuatro:hover {transform: translate(-90px,-50px); transition: ease-in 4s;}
+
+.cinco:hover {transform: matrix(0, 1, 1, 0, 1, 0); transition: ease-out 4s;}
+
+.seis:hover {transform: matrix(0, -1, -1, 0, -1, 0); transition: ease-in-out 4s;}
+
+/*TRANSICIONES:
+lineal: no tiene flexibilización, tiene velocidad constaante
+ease-in: nos dice que inicia la transformación lento y termiuna rápido
+ease-out: inicia la transformación rápido y termina lento
+ease-in-out: empieza lento, luego va rápido y termina lento
+las transformaciones de rotate y skew se manejan en deg, la de translate en px*/
+
+
+
+
